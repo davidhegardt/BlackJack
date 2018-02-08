@@ -1,0 +1,66 @@
+﻿<Window x:Class="Black_Jack.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Black_Jack"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="768" Width="1080">
+
+    <Grid>
+        <Border BorderBrush="BurlyWood"  BorderThickness="9" CornerRadius="5">
+            <Canvas Margin="0,0,0.4,0" >
+                <Canvas.Background>
+                    <ImageBrush ImageSource="Images/table_background.png" />
+                </Canvas.Background>
+
+                <Image x:Name="dealerFirst" Height="78" Canvas.Left="510" Canvas.Top="250" Width="87" Source="Images/b1fv.png"/>
+                <Image x:Name="dealerSecond" Height="78" Canvas.Left="485" Canvas.Top="250" Width="92" Source="Images/c1.png"/>
+                <Image x:Name="dealerThird" Height="78" Canvas.Left="475" Canvas.Top="250" Width="75" Source="Images/c2.png"/>
+                <Image x:Name="dealerFour" Height="78" Canvas.Left="450" Canvas.Top="250" Width="75" Source="Images/c3.png" />
+                <Image x:Name="dealerFive" Height="78" Canvas.Left="430" Canvas.Top="250" Width="75" Source="Images/c4.png" />
+
+                <Image x:Name="tempCard" Height="100" Canvas.Left="450" Canvas.Top="355" Width="50" Source="Images/d5.png" />
+
+                <Button x:Name="btnDeal" Content="Deal" Canvas.Left="420" Style="{DynamicResource RoundedButton}" Canvas.Top="582" Width="75" Click="btnDeal_Click" />
+                <Button x:Name="btnNewGame" Content="New Game" Canvas.Left="550" Style="{DynamicResource RoundedButton}" Canvas.Top="582" Width="75" Click="btnNewGame_Click" />
+                <Button x:Name="btnShuffle" Content="Shuffle" Canvas.Right="110" Style="{DynamicResource RoundedButton}" Canvas.Top="150" Width="75" Click="btnShuffle_Click" IsEnabled="False" />
+
+
+                <Label x:Name="lblDeckCount" Content="Deck One:" Canvas.Left="770" Canvas.Top="20" FontFamily="Rockwell" FontSize="24" Foreground="#FFCE1C1C"/>
+                <Label x:Name="lblDeck2Count" Content="Deck Two:" Canvas.Left="770" Canvas.Top="50" FontFamily="Rockwell" FontSize="24" Foreground="#FFCE1C1C"/>
+
+
+
+                <Label x:Name="lblDealerScore" Content="Dealer Score" Canvas.Left="390" Canvas.Top="200" FontFamily="Magneto" FontSize="24"/>
+                <Label x:Name="lblFinished" Content="GAME OVER!" Canvas.Left="335" Canvas.Top="365" FontFamily="Showcard Gothic" FontSize="48" Visibility="Hidden" >
+                    <Label.Style>
+                        <Style TargetType="Label">
+                            <Style.Triggers>
+                                <EventTrigger RoutedEvent="Label.Loaded">
+                                    <EventTrigger.Actions>
+                                        <BeginStoryboard>
+                                            <Storyboard TargetProperty="Opacity">
+                                                <DoubleAnimation  Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5" RepeatBehavior="Forever" AutoReverse="True" />
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </EventTrigger.Actions>
+                                </EventTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <ListBox x:Name="listBoxScore" ItemsSource="{Binding Highscores}" Height="132" Canvas.Left="869" Canvas.Top="230" Width="153" Background="#FF783B3B" FontFamily="Stencil"/>
+                <Label x:Name="lblScore" Content="Latest Winning Hands:" Canvas.Left="811" Canvas.Top="194" FontFamily="Rockwell" FontSize="18" Foreground="#FFCE1C1C"/>
+                <Button x:Name="btnDelete" Style="{DynamicResource RoundedButton}" Content="Delete Selected Player" Canvas.Left="870" Canvas.Top="379" Width="150" Click="btnDelete_Click"/>
+
+
+
+
+
+            </Canvas>
+        </Border>
+    </Grid>
+</Window>
+
+    

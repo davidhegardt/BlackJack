@@ -1,0 +1,56 @@
+﻿<Window x:Class="Black_Jack.PlayerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Black_Jack"
+        mc:Ignorable="d"
+        Title="PlayerWindow" Height="350" Width="770">
+    <Grid Background="ForestGreen">
+        <Border BorderBrush="BurlyWood"  BorderThickness="9" CornerRadius="5">
+            <Canvas HorizontalAlignment="Left" Height="277" Margin="10,10,0,0" VerticalAlignment="Top" Width="724">
+                <Button x:Name="btnStay" Content="Stay" Canvas.Left="137" Width="75" Canvas.Top="10" Click="btnStay_Click"/>
+                <Button x:Name="btnHit" Content="Hit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Canvas.Left="15" Canvas.Top="10" Click="btnHit_Click"/>
+                <Label x:Name="lblPlayerOne" Content="Player One" Canvas.Left="10" Canvas.Top="34" Foreground="#FF5F1010" FontFamily="Magneto" FontSize="22"/>
+                <Label x:Name="lblPlayerOneScore" Content="Score :" Canvas.Left="10" Canvas.Top="68" FontFamily="Magneto" FontSize="24" Foreground="#FF5F1010"/>
+
+                <Label x:Name="lblPlayerMoney" Content="Money :" Canvas.Left="10" Canvas.Top="100" FontFamily="Magneto" FontSize="24" Foreground="#FF5F1010"/>
+
+                <Label x:Name="lblBet" Content="Bet :" Canvas.Left="10" Canvas.Top="170" FontFamily="Magneto" FontSize="24" Foreground="#FF5F1010"/>
+
+                <Image x:Name="firstCard" Height="100" Canvas.Left="277" Canvas.Bottom="20" Width="50" Source="Images/h1.png" Visibility="Hidden" Canvas.Top="83" />
+                <Image x:Name="secondCard" Height="100" Canvas.Left="290" Canvas.Bottom="20" Width="50" Source="Images/sq.png" Visibility="Hidden" Canvas.Top="83" />
+                <Image x:Name="thirdCard" Height="100" Canvas.Left="306" Canvas.Bottom="20" Width="50" Source="Images/cq.png" Visibility="Hidden" Canvas.Top="83" />
+                <Image x:Name="fourCard" Height="100" Canvas.Left="327" Canvas.Bottom="20" Width="50" Source="Images/ck.png" Visibility="Hidden" Canvas.Top="83" />
+                <Image x:Name="fiveCard" Height="100" Canvas.Left="345" Canvas.Bottom="20" Width="50" Source="Images/dj.png" Visibility="Hidden" Canvas.Top="83" />
+                <Label x:Name="lblStatus" Content="" Canvas.Left="80" Canvas.Top="147" FontFamily="Stencil" FontSize="22" Foreground="#FF5C0F0F">
+                    <Label.Style>
+                        <Style TargetType="Label">
+                            <Style.Triggers>
+                                <EventTrigger RoutedEvent="Label.Loaded">
+                                    <EventTrigger.Actions>
+                                        <BeginStoryboard>
+                                            <Storyboard TargetProperty="Opacity">
+                                                <DoubleAnimation  Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5" RepeatBehavior="Forever" AutoReverse="True" />
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </EventTrigger.Actions>
+                                </EventTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Label.Style>
+                </Label>
+                <Image x:Name="betOne" Height="50" Canvas.Left="10" Canvas.Top="217" Width="50" Source="Images/one_chip.png" MouseUp="betOne_MouseUp" />
+                
+                <Image x:Name="betTen" Height="50" Canvas.Left="125" Canvas.Top="219" Width="50" Source="Images/ten_chip.png" MouseUp="betTen_MouseUp" />
+                <Image x:Name="bet25" Height="50" Canvas.Left="180" Canvas.Top="217" Width="50" Source="Images/25_chip.png" MouseUp="bet25_MouseUp" />
+                <Image x:Name="betFifty" Height="50" Canvas.Left="235" Canvas.Top="219" Width="50" Source="Images/50_chip.png" MouseUp="betFifty_MouseUp" />
+                <Image x:Name="bet150" Height="50" Canvas.Left="290" Canvas.Top="219" Width="50" Source="Images/150_chip.png" MouseUp="bet150_MouseUp" />
+                <Image x:Name="betFive" Height="50" Canvas.Left="68" Canvas.Top="217" Width="50" Source="Images/five_chip.png" MouseUp="betFive_MouseUp" />
+                <Label x:Name="lblLastHand" Content="Last Winning Hand" Canvas.Left="531" Canvas.Top="150"/>
+                <Label x:Name="lblWinScore" Content="0" Canvas.Left="531" Canvas.Top="180" />
+            </Canvas>
+        </Border>
+
+    </Grid>
+</Window>

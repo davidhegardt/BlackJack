@@ -1,0 +1,11 @@
+C:\Users\Dave\Documents\Nuvarande\C# III\BlackJack Database\BlackJack Database\bin\Debug\BlackJack Database.pdb
+C:\Users\Dave\Documents\Nuvarande\C# III\BlackJack Database\BlackJack Database\bin\Debug\EntityFramework.dll
+C:\Users\Dave\Documents\Nuvarande\C# III\BlackJack Database\BlackJack Database\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Dave\Documents\Nuvarande\C# III\BlackJack Database\BlackJack Database\bin\Debug\EntityFramework.xml
+C:\Users\Dave\Documents\Nuvarande\C# III\BlackJack Database\BlackJack Database\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Dave\Documents\Nuvarande\C# III\BlackJack Database\BlackJack Database\obj\Debug\BlackJack Database.csprojResolveAssemblyReference.cache
+C:\Users\Dave\Documents\Nuvarande\C# III\BlackJack Database\BlackJack Database\obj\Debug\BlackJack Database.csproj.CoreCompileInputs.cache
+C:\Users\Dave\Documents\Nuvarande\C# III\BlackJack Database\BlackJack Database\obj\Debug\BlackJack Database.pdb
+C:\Users\Dave\Documents\Nuvarande\C# III\BlackJack Database\BlackJack Database\bin\Debug\BlackJack Database.dll.config
+C:\Users\Dave\Documents\Nuvarande\C# III\BlackJack Database\BlackJack Database\bin\Debug\BlackJack Database.dll
+C:\Users\Dave\Documents\Nuvarande\C# III\BlackJack Database\BlackJack Database\obj\Debug\BlackJack Database.dll

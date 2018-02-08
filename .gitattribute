@@ -1,2 +1,1 @@
-
-*.config text
+*.rb linguist-language=C#

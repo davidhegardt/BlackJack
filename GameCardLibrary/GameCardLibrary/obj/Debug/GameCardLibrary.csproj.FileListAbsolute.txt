@@ -1,0 +1,13 @@
+C:\Users\Dave\Documents\Nuvarande\C# III\GameCardLibrary\GameCardLibrary\bin\Debug\GameCardLibrary.dll
+C:\Users\Dave\Documents\Nuvarande\C# III\GameCardLibrary\GameCardLibrary\bin\Debug\GameCardLibrary.pdb
+C:\Users\Dave\Documents\Nuvarande\C# III\GameCardLibrary\GameCardLibrary\obj\Debug\GameCardLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Dave\Documents\Nuvarande\C# III\GameCardLibrary\GameCardLibrary\obj\Debug\GameCardLibrary.dll
+C:\Users\Dave\Documents\Nuvarande\C# III\GameCardLibrary\GameCardLibrary\obj\Debug\GameCardLibrary.pdb
+C:\Users\Dave\Documents\Nuvarande\C# III\GameCardLibrary\GameCardLibrary\obj\Debug\GameCardLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Dave\Documents\Nuvarande\C# III\GameCardLibrary\GameCardLibrary\bin\Debug\Utilities.dll
+C:\Users\Dave\Documents\Nuvarande\C# III\GameCardLibrary\GameCardLibrary\bin\Debug\Utilities.pdb
+C:\Users\Dave\Documents\Nuvarande\C# III\GameCardLibrary\GameCardLibrary\bin\Debug\BlackJack Database.dll
+C:\Users\Dave\Documents\Nuvarande\C# III\GameCardLibrary\GameCardLibrary\bin\Debug\EntityFramework.dll
+C:\Users\Dave\Documents\Nuvarande\C# III\GameCardLibrary\GameCardLibrary\bin\Debug\BlackJack Database.pdb
+C:\Users\Dave\Documents\Nuvarande\C# III\GameCardLibrary\GameCardLibrary\bin\Debug\BlackJack Database.dll.config
+C:\Users\Dave\Documents\Nuvarande\C# III\GameCardLibrary\GameCardLibrary\bin\Debug\EntityFramework.xml
